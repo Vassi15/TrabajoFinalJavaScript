@@ -1,0 +1,24 @@
+{
+    "noticias": [
+        {
+            "titulo": "Experiencia de Masaje en Pareja",
+            "descripcion": "Comparte un momento especial con nuestros masajes en pareja. Una experiencia que revitaliza y fortalece la conexión entre tú y tu ser querido.",
+            "imagen": "./assets/img/massage-4916847_640.jpg"
+        },
+        {
+            "titulo": "Un Oasis de Tranquilidad para Ti",
+            "descripcion": "Sumérgete en nuestro spa y disfruta de un ambiente diseñado para brindarte paz y bienestar. Renueva tu energía y alivia el estrés.",
+            "imagen": "./assets/img/spa-853462_640.jpg"
+        },
+        {
+            "titulo": "Edgard, Terapeuta Profesional a tu Servicio",
+            "descripcion": "Edgard, con años de experiencia en masajes terapéuticos, te ayudará a reducir tensiones y mejorar tu salud con técnicas personalizadas.",
+            "imagen": "./assets/img/woman-3708735_640.jpg"
+        },
+        {
+            "titulo": "Laura: Tu Experta en Belleza y Cuidado Personal",
+            "descripcion": "Laura, especialista en estética, te ofrece tratamientos de belleza para resaltar tu mejor versión. Cuidado personalizado y profesionalidad garantizados.",
+            "imagen": "./assets/img/woman-8752830_640.jpg"
+        }
+    ]
+}

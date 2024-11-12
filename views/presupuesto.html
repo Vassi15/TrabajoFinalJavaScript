@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de Tratamientos de Belleza">
+    <meta name="author" content="JM SALON SPA">
+    <meta name="keywords" content="spa, tratamientos faciales y corporales"> 
+    <title>PRESUPUESTO | Monica Peña</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="./favicon.ico?=2">
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+            <nav class="barraNavegacion">
+                <div>
+                    <img class="logoImagen" src="../assets/img/bitmap.webp" alt="Logo de la empresa" title="imagen de salon spa Monica Peña" height="477" width="1516">
+                    <h1>Solicita un Presupuesto Personalizado</h1>
+                </div>
+                <div>
+                    <ul class="listaNavegacion">
+                        <li><a href="../index.html" title="Página de inicio" >inicio</a></li>
+                        <li><a href="./galeria.html" title="página de galeria">galeria</a></li>
+                        <li><a href="./presupuesto.html" class="active" title="página de presupuesto">presupuesto</a></li>
+                        <li><a href="./contacto.html" title="página de contacto">contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+        <section class="intro-presupuesto">
+            <div class="capa"></div>
+            <div class="container contenidoIntro">
+                <h2>presupuesto</h2>
+                <p class="parrafos">
+                    gracias por tu interés en nuestros productos y servicios. A continuación, te invitamos a completar el formulario para obtener un presupuesto detallado y personalizado. 
+                    Por favor, proporciona tus datos de contacto y selecciona las opciones que se ajusten a tus necesidades.
+                </p> 
+            </div>
+        </section>   
+        <div class="contenedorPresupuesto container">
+
+            <form action="#" class="miFormulario" id="miFormulario">
+                <fieldset class="contro_formulario1">
+                <legend>Datos Personales</legend>
+                <div class="input-text">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="validoinput" id="nombre" name="nombre">
+                    <span class="error" id="nombreError"></span>
+                </div>
+                <div class="input-text">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="validoinput" id="apellido" name="apellido">
+                    <span class="error" id="apellidoError"></span>
+                </div>
+                <div class="input-text">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                    <span class="error" id="telefonoError"></span>
+                </div>
+        
+                <div class="input-text">
+                    <label for="correo">Correo:</label>
+                    <input type="text" id="correo" name="correo">
+                    <span class="error" id="correoError"></span>
+                </div>
+                
+                </fieldset>
+        
+                <fieldset class="contro_formulario2">
+                <legend>Presupuesto</legend>
+                    <p>Elige el productos que desees y pagalo en coutas con descuento</p>
+                <label for="producto">Producto:</label>
+                <select id="producto">
+                    <option value="100">Extensiones de pestañas - $100</option>
+                    <option value="200">Masaje relajante - $200</option>
+                    <option value="300">Limpieza facial - $300</option>
+                </select>
+                
+                <label for="plazo">Plazo (meses):</label>
+                <input type="number" id="plazo" min="1" placeholder=" Debes elegir un numero de coutas" >
+       
+                <label>Extras:</label>
+                <div class="opcionesextras">
+                   <label for="extra1">Paquete Grande - 50$</label>
+                   <input type="checkbox" class="extra" id="extra1" value="50">
+                </div>
+                <div class="opcionesextras">
+                   <label for="extra2">Paquete Mediano - 30$</label>
+             
+                    <input type="checkbox" class="extra" id="extra2" value="30">
+              
+                </div>
+                <div class="opcionesextras">
+                   <label for="extra3">Paquete Pequeño - 20$</label>
+                
+             
+                    <input type="checkbox" class="extra" id="extra3" value="20">
+                </div>
+                <label for="presupuesto">Presupuesto Final:</label>
+                <input type="text" id="presupuesto" readonly>
+                </fieldset>
+                <fieldset class="control_envio">
+                <div class="formularioEnviado">
+                    <span class="formularioEnviado" id="formularioEnviado"></span>   
+                </div>  
+                <div class="botones">
+                    <label for="condiciones"> Acepto las condiciones de privacidad</label>
+                    <input type="checkbox" id="condiciones">
+                </div>
+                <div class="botones">     
+                    <input type="submit" value="Enviar" class="boton" id="enviar">
+                    <input type="reset" value="Borrar" class="boton" id="borrar">
+                </div>  
+                 </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!--Pie de pagina de la empresa indicandos las redes sociales, direccion y Base legal-->
+        <p>siguenos en;</p>
+        <nav class="container-icons">
+            <a class="icon-social" href="https://www.facebook.com/NuevoSalonSpa2021?mibextid=ZbWKwL" title="Síguenos en Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a class="icon-social" href="https://www.instagram.com/mpenacolmenares?igsh=ZjBmOXR5dGZhcm91" title="Síguenos en Instagram">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a class="icon-social" href="https://www.tiktok.com/@monica_nathaly24?_t=8kp7co0NMAw&_r=1" title="Síguenos en TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </nav>
+        <img class="logo" src="../assets/img/bitmap.webp" alt="Logo Jm Salon Spa" height="477" width="1516" title="Logo de JM SAlON SPA"
+        >
+        <p>peru - chimbote - jr. guillermo moore 564</p>
+        <p>base legal</p>
+      </footer>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/validacionPresupuesto.js"></script>
+</body>
+</html>

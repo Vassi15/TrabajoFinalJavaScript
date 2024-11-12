@@ -36,7 +36,7 @@ function success(position){
     let greenIcon = L.icon({
         iconUrl:'../assets/img/iconomapa/bitmap.webp',
         iconSize:[80,50],
-        iconAnchor:[22,94],
+        iconAnchor:[30,30],
         popupAnchor:[-3,-76]
     })
     var circulo = L.circle([37.112157, -4.0309515,7], { 

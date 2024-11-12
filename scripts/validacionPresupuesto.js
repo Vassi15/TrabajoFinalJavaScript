@@ -10,7 +10,7 @@ const btnborrar = document.getElementById("borrar");
 const condiciones = document.getElementById("condiciones")
 function validarNombre () {
     const nombre = nombreinput.value.trim();
-    let expresionNombre = /^[a-zA-Z][a-zA-Z0-9]*$/;
+    let expresionNombre = /^[a-zA-Z]{1,15}$/;
     if (nombre.length >= 3 && expresionNombre.test(nombre)) {
         nombreinput.classList.add("valido");
         nombreinput.classList.remove("invalido");
@@ -40,7 +40,7 @@ function validarNombre () {
 
  function validarCorreo (){
     const correo = correoinput.value
-    let expresionCorreo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    let expresionCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (correo.length >= 3 && expresionCorreo.test(correo)) {
         correoinput.classList.add("valido");
         correoinput.classList.remove("invalido")
@@ -55,9 +55,9 @@ function validarNombre () {
  } 
 
  function validarapellido (){
-    const contrase = apellidoinput.value
-    let expresionContrasena = /^[a-zA-Z ]{1,40}$/;
-    if (contrase.length >= 3 && expresionContrasena.test(contrase)) {
+    const apellido = apellidoinput.value
+    let expresionApellidos = /^[a-zA-Z ]{1,40}$/;
+    if (apellido.length >= 3 && expresionApellidos.test(apellido)) {
         apellidoinput.classList.add("valido");
         apellidoinput.classList.remove("invalido")
         document.getElementById("apellidoError").textContent = ""

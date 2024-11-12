@@ -50,7 +50,24 @@ function success(position){
     let marker = L.marker([37.112157,-4.0309515,7],{icon:greenIcon}).bindPopup(popup).openPopup().addTo(map);
 }
 function error(){
-
+    let map = L.map('mapa',{
+        center:[37.112157 , -4.0309515,7],
+        zoom: 14
+    })
+    let greenIcon = L.icon({
+        iconUrl:'../assets/img/iconomapa/bitmap.webp',
+        iconSize:[80,50],
+        iconAnchor:[30,30],
+        popupAnchor:[-3,-76]
+    })
+    var circulo = L.circle([37.112157, -4.0309515,7], { 
+        color: 'black',    
+         fillColor: 'black',  
+            fillOpacity: 0.5,    
+             radius: 500 }).addTo(map)
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution: 'Mi openStreetMap'}).addTo(map);
+    let popup = L.popup().setLatLng([37.112157,-4.0309515,7]).setContent('<a>href="http://www.aacv.es"</a><p>JM salon Span | Monica Peña</p><p>Dirección:Santa cruz de tenerife. calle el draguillo</p>');
+    let marker = L.marker([37.112157,-4.0309515,7],{icon:greenIcon}).bindPopup(popup).openPopup().addTo(map);
 }
 
 
